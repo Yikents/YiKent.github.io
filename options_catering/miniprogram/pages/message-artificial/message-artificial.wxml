@@ -1,0 +1,63 @@
+<!--pages/message-artificial/message-artificial.wxml-->
+<view class="artificial">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left" bindtap="jumpRouterEvent" />
+    </view>
+    <view class="menu-header-title">海底捞客服中心</view>
+  </view>
+  <view class="time">
+  <view class="artificial-time">{{time}}</view>
+</view>
+  <view class="artificial-header">
+    <view class="artificial-header-image">
+      <image class="auto-image" src="../../images/su_comment_logo.png"></image>
+    </view>
+    <view class="artificial-header-text">您好，我是智能机器人小Hi，很高兴为您服务，您可选择下方热门问题，或用一句话简述您的疑问哦!</view>
+  </view>
+  <view class="artificial-body">
+    <view class="body-would">
+      <image class="would" src="../../images/world.png"></image>
+    </view>
+    <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">门店搜索</view>
+
+    </view>
+    <view class="stores-more">截止2021年12月31日，海底捞已在中国（含港澳台）以及新加坡、越南、韩国、日本、英国、美国、加拿大以及澳大利亚等国家经营1443家门店，拥有超过85百万会员和14万员工。
+    </view>
+    <view class="foot">
+      <view class="stores">
+        <view class="stores-image">
+          <image class="stores-one" src="../../images/text.png"></image>
+        </view>
+        <view class="stores-text">联系我们</view>
+      </view>
+      <view class="foot-box">
+      <view class="foot-phone">
+      <image class="phone" src="../../images/a.png"></image>
+      </view>
+      <view class="foot-text">客服电话4009-107-107</view>
+      </view>
+      <view class="foot-box">
+      <view class="foot-phone">
+      <image class="phone" src="../../images/b.png"></image>
+      </view>
+      <view class="foot-text">工作时间：9:00 - 22:00</view>
+      </view>
+      <view class="foot-box">
+      <view class="foot-phone">
+      <image class="phone" src="../../images/c.png"></image>
+      </view>
+      <view class="foot-text">客服邮箱： hdl@haidilao.com</view>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- <view class="input-bottom">
+    <input class="input-text" type="text" placeholder="请输入你要咨询的问题" />
+    </view> -->
+</view>

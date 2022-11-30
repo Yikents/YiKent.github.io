@@ -1,0 +1,50 @@
+<!--pages/message/message.wxml-->
+<view class="message">
+    <image class="message-background" src="../../images/shanyan_page_bg.png" alt="" />
+    <view class="message-header">
+        <view class="message-img">
+            <view class="img" bindtap="like">
+                <image class="message-image" src="../../images/message_like_icon.png" alt="" />
+                <text>我的赞</text>
+            </view>
+            <view class="img" bindtap="comments">
+                <image class="message-image" src="../../images/message_comment_icon.png" alt="" />
+                <text>评论</text>
+            </view>
+            <view class="img" bindtap="attention">
+                <image class="message-image" src="../../images/message_follow_icon.png" alt="" />
+                <text>关注</text>
+            </view>
+
+        </view>
+    </view>
+    <view class="message-body">
+        <view class="message-body-text">
+            <view class="text-left"></view>
+            <view class="text-right">
+                关于海底捞</view>
+        </view>
+        <view class="message-body-img" bindtap="notice">
+            <view class="message-body-img-left">
+                <image class="message-image" src="../../images/message_notice_icon.png" alt="" />
+            </view>
+            <view class="message-body-img-left-text">社会实践</view>
+            <view class="message-body-img-right">></view>
+        </view>
+        <view class="message-body-img"  bindtap="artificial">
+            <view class="message-body-img-left">
+                <image class="message-image" src="../../images/message_assistant_icon.png" alt="" />
+            </view>
+            <view class="message-body-img-left-text">客服助手</view>
+            <view class="message-body-img-right">></view>
+        </view>
+        <view class="message-body-img"  bindtap="mine">
+            <view class="message-body-img-left">
+                <image class="message-image" src="../../images/message_call_me_icon.png" alt="" />
+            </view>
+            <view class="message-body-img-left-text">品牌故事</view>
+            <view class="message-body-img-right">></view>
+        </view>
+
+    </view>
+</view>

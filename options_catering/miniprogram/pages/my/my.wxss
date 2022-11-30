@@ -1,0 +1,108 @@
+/* pages/my/my.wxss */
+.my{
+    width: 100%;
+    height: 100%;
+}
+image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.my-header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.my-header-image{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.index-text {
+    position: absolute;
+    top: 150px;
+    right: 25px;
+    left: 25px;
+    align-items: center;
+    display: flex;
+    margin: 0px auto;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px #bbb;
+}
+
+.index-text-img {
+    width: 66px;
+    height: 66px;
+    z-index: 2;
+    margin-left: 10px;
+}
+
+.index-image {
+    width: 66px;
+    height: 66px;
+}
+
+.index-text-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    align-items: center;
+    width: 240px;
+    height: 70px;
+    /* background-color: palegreen; */
+}
+
+.text-top {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.text-bottom {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.my-order{
+    margin: 25px;
+    margin-top: 80px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px #bbb;
+    background-color: #fff;
+}
+.my-order-completion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.my-order-completion-image{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    z-index: 2;
+}
+.my-order-completion-image-icon{
+    width: 40px;
+    height: 40px;
+}
+.my-order-completion-text{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.my-order-completion-icon{
+    position: absolute;
+    right: 42px;
+    font-size: 18px;
+}
+.my-order-cabout{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}

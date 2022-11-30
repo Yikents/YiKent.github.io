@@ -1,0 +1,15 @@
+<!--pages/message-like/message-like.wxml-->
+<view class="like">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left"  bindtap="jumpRouterEvent"/>
+    </view>
+    <view class="menu-header-title">我的赞</view>
+  </view>
+<view class="like-header">
+    <image src="../../images/no_login_view.png" alt=""/>
+</view>
+<view class="like-header-text">暂无赞</view>
+
+</view>
+

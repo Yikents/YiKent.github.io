@@ -1,0 +1,166 @@
+/* pages/my-order/my-order.wxss */
+.order {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.index-menu-header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  height: 11vh;
+  padding-bottom: 20rpx;
+}
+
+.menu-header-arrow {
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 22px;
+
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.menu-header-title {
+  flex: 1;
+  text-align: center;
+  margin-right: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.order-image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 150px;
+  align-items: center;
+
+}
+
+.auto-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.order-text {
+  margin: 0px auto;
+  color: #bbb;
+  text-align: center;
+}
+
+.tab-list-container {
+  position: fixed;
+  width: 100vw;
+ top:16vh;
+ bottom:0rpx;
+}
+
+.tab-list-container {
+  width: 100vw;
+  overflow: scroll;
+}
+.tab-list-container::-webkit-scrollbar{
+  width:0rpx;
+  height:0rpx;
+}
+
+.list-container-list {
+  box-sizing: border-box;
+  margin: 40rpx;
+  background: #efefef8e;
+  padding: 40rpx;
+  border-radius: 30rpx;
+
+}
+
+.list-container-header {
+  display: flex;
+}
+
+.header-left-content {
+  display: flex;
+  align-items: center;
+}
+.list-container-body{
+  display: flex;
+  align-items: center;
+}
+.left-content-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.left-content-store {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.container-body-left {
+  margin: 20rpx 0rpx;
+}
+
+.body-left-price {
+  display:flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.left-price-icon,.body-left-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right:20rpx;
+  color:rgb(235, 201, 139)
+}
+
+.left-price-text{
+  font-size:30rpx;
+  font-weight:bold;
+}
+.body-left-time{
+  display: flex;
+  align-items: center;
+}
+.body-left-text{
+  font-size:30rpx;
+  font-weight: bold;
+}
+.container-body-right{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+}
+
+.body-right-button{
+  padding:20rpx 25rpx;
+  background:#e4393c;
+  font-size: 30rpx;
+  color:#fff;
+  margin-left:40rpx;
+  border-radius: 5rpx;
+}
+.body-right-completed{
+  padding:20rpx;
+  font-size: 30rpx;
+  color:gray;
+  margin-left:40rpx;
+}
+.auto-img{
+  display: flex;
+  width:60rpx;
+  height:60rpx;
+}

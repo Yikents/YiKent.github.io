@@ -1,0 +1,115 @@
+.order-foods {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background:#fff;
+}
+.order-foods-container{
+  position: relative;
+  width:100%;
+  height:100vh;
+}
+.foods-container-list{
+  position:absolute;
+  box-sizing: border-box;
+  width:100%;
+ height:800rpx;
+  overflow: scroll;
+}
+.foods-container-list::-webkit-scrollbar{
+  width:0rpx;
+  height:0rpx;
+}
+.foods-container-item{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width:calc(100% - 40rpx);
+  margin-bottom:20rpx;
+  margin: 20rpx;
+  padding:0rpx 20rpx;
+}
+.foods-container-ig{
+  width:140rpx;
+  height:140rpx;
+  overflow: hidden;
+  margin-right:20rpx;
+  border-radius: 20rpx;
+}
+.auto-img{
+  display: block;
+  width:140rpx;
+  height:140rpx;
+}
+.foods-container-context{
+  display: flex;
+  height:140rpx;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-context-title{
+  font-size:30rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  color:#777;
+}
+.container-context-center{
+  display:flex;
+  align-items: center;
+  height:60rpx;
+  margin:5rpx 0rpx;
+  font-size: 23rpx;
+}
+.context-center-all,.context-center-part{
+  padding:3rpx 10rpx;
+  background:#efefef;
+  border-radius: 8rpx;
+  color:#dabb85;
+}
+ .active-style{
+  background:#dabb85 !important;
+  color:#fff !important;
+}
+.context-center-all{
+  margin-right:10rpx;
+}
+.container-context-footer{
+  box-sizing: border-box;
+  width:300rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.context-footer-price{
+    font-size:30rpx;
+    font-weight: bold;
+}
+.context-footer-button{
+  display: flex;
+  align-items: center;
+  height:40rpx;
+}
+.button-left-part{
+  display: flex;
+  align-items: center;
+}
+.button-reduce{
+  width:36rpx;
+  height:36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+.button-count{
+  margin:0rpx 20rpx;
+  font-size:30rpx;
+}
+.button-right-part{
+  width:36rpx;
+  height:36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  background:#dabb85;
+  color:#fff;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,54 @@
+<!--pages/message-notice/message-notice.wxml-->
+<view class="notice">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left"  bindtap="jumpRouterEvent"/>
+    </view>
+    <view class="menu-header-title">社会实践</view>
+  </view>
+<view class="index-activity-body">
+<view class="index-activity-body-image">
+      <image class="image-hai-background" src="../../images/shehui.jpg" alt="" />
+    </view>
+    <view class="notice-image">
+    <image class="auto-image" src="../../images/1.png"></image></view>
+      <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">投身社区</view>
+    </view>
+    <view class="she-text">我们在保证自身稳健运营的同时，饮水思泉，不忘初心，积极履行企业社会责任。带动员工热心投身慈善公益及志愿者事业，为当地社区奉献自己的力量。
+      </view>
+      <view class="notice-image">
+    <image class="auto-image" src="../../images/2.png"></image></view>
+      <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">炳文书馆——海底捞打造的公益图书馆</view>
+    </view>
+    <view class="she-text">炳文”取自海底捞董事长张勇先生祖父之名，一为追思缅怀尊长，二为感恩回馈社会。“炳心明志、藝文求知”是我们的口号。 出于对精神和心灵发展的关怀，让大家好读书，读好书，提供长期的学习场所而考虑设置公益书馆项目。书馆位于旭海时代广场三楼，馆内面积1080平米，由一次成型的GRG、书架将其分隔成一个极具动态现代感的场景。书馆图书按照中图法将书籍分为26类，馆藏图书共计30000余册。可实现电子书阅读，纸质书借阅、阅读互动、公益讲座等功能。
+      </view>
+      <view class="notice-image">
+    <image class="auto-image" src="../../images/3.png"></image></view>
+      <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">“因善而美”海底捞爱心项目</view>
+    </view>
+    <view class="she-text">海底捞与5A级基金会爱佑慈善基金会合作，于全国门店范围内征集并认捐儿童“小画家”画作，款项将用于提升困境儿童生活品质及儿童医疗水平。旨在为0-14岁儿童福利、儿童医疗项目提供长久帮助。
+      </view>
+      <view class="notice-image">
+    <image class="auto-image" src="../../images/4.png"></image></view>
+      <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">简阳通材实验学校</view>
+    </view>
+    <view class="she-text">简阳通材实验学校是由海底捞于2001年6月创办的一所全寄宿制民办学校。在简阳市委市政府和各级教育行政主管部门的关心支持下，在海底捞公司雄厚资金的大力助推下，在通材全体师生员工的努力拼搏下，学校迅速发展壮大。 通材学校源自简阳中学前身——通材书院。“通材”二字，寄寓着学校的办学理想和育人方向：一是让所有受教育者通通成才；二是把受教育者培养成为“通用性人才”。
+      </view>
+</view>
+</view>

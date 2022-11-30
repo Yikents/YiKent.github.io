@@ -1,0 +1,61 @@
+<view class="order-detail">
+  <view class="order-detail-header">
+    <view class="detail-header-arrow">
+      <van-icon name="arrow-left" bindtap="jumpRouterEvent" />
+    </view>
+    <view class="detail-header-title">订单详情</view>
+  </view>
+  <view class="order-detail-body">
+  <view class="order-detail-box">
+    <view class="detail-body-pay">
+      <view class="body-pay-status">
+      <view class="pay-status-header">{{isCompleted?renderData.status?'订单已取消':'订单已支付':'待支付中...'}}</view>
+      <view class="pay-status-button" hidden="{{isCompleted}}">
+      <view class="status-button-cancel" bindtap="cancelOrderEvent">取消订单</view>
+      <view class="status-button-confirm" bindtap="confirmPayEvent">确认支付</view>
+      </view>
+      </view>
+    </view>
+    <view class="detail-body-store">
+      <view class="body-store-header">
+      <view class="body-store-icon"><image class="auto-img" src="../../images/home_store_icon.png"></image></view>
+      <view class="body-store-name">{{renderData.storeName}}</view>
+      </view>
+      <view class="body-store-price">
+        <view class="store-price-icon"><van-icon name="gold-coin-o" /></view>
+        <view class="store-price-text">¥{{renderData.allPrice}}</view>
+      </view>
+      <view class="body-store-time">
+      <view class="store-time-icon"><van-icon name="clock-o" /></view>
+      <view class="store-time-text">{{renderData.time}}</view>
+      </view>
+    </view>
+    <view class="detail-body-list">
+      <view class="body-list-pot">
+        <view class="list-pot-name">锅底</view>
+        <view class="list-pot-container">
+          <view class="pot-container-item" wx:for="{{potData}}" wx:key="index">
+          <view class="container-item-name">{{item.titleDishes}}</view>
+          <view class="container-item-count">x{{item.count}}</view>
+          <view class="container-item-price">¥{{item.price}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="body-list-vege">
+        <view class="list-vege-name">菜品</view>
+        <view class="list-vege-container">
+          <view class="vege-container-item" wx:for="{{vegeData}}" wx:key="index">
+          <view class="container-item-name">{{item.titleDishes}}</view>
+          <view class="container-item-count">x{{item.count}}</view>
+          <view class="container-item-price">¥{{item.price}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="body-footer-price">
+        <view class="footer-price-left">总计</view>
+        <view class="footer-price-right">¥{{renderData.allPrice}}</view>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>

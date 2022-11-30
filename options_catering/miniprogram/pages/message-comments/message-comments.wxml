@@ -1,0 +1,14 @@
+<!--pages/message-comments/message-comments.wxml-->
+<view class="comments">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left"  bindtap="jumpRouterEvent"/>
+    </view>
+    <view class="menu-header-title">评论</view>
+  </view>
+<view class="comments-header">
+<image src="../../images/icon_no_data_comment.png" alt=""/>
+</view>
+<view class="comments-header-text">暂无评论</view>
+</view>
+

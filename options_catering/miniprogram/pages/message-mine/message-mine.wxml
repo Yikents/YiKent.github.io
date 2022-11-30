@@ -1,0 +1,218 @@
+<!--pages/message-mine/message-mine.wxml-->
+<view class="mine">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left"  bindtap="jumpRouterEvent"/>
+    </view>
+    <view class="menu-header-title">品牌故事</view>
+  </view>
+    <!-- <view class="mine-header">
+
+      <image src="../../images/icon_store_search_empty.png" alt="" />
+    </view>
+    <view class="mine-header-text">暂无@我的</view> -->
+    <view class="index-activity-body">
+    <view class="index-activity-body-image">
+      <image class="image-hai-background" src="../../images/aaa.jpg" alt="" />
+    </view>
+    <view class="stores">
+      <view class="stores-image">
+        <image class="stores-one" src="../../images/text.png"></image>
+      </view>
+      <view class="stores-text">品牌故事</view> 
+    </view>
+    <view class="she-text">海底捞品牌创建于1994年，历经二十多年的发展，海底捞国际控股有限公司已经成长为国际知名的餐饮企业。
+截止2022年6月30日，海底捞在全球开设1435家直营餐厅，其中1310家门店位于中国大陆，22家门店位于中国香港、中国澳门、中国台湾，103家位于11个其他国家。海底捞多年来历经市场和顾客的检验，成功地打造出信誉度高，融汇各地火锅特色于一体的优质火锅品牌。作为一个业务涉及全球的大型连锁餐饮企业，海底捞秉承诚信经营的理念，以提升食品质量的稳定性和安全性为前提条件， 为广大消费者提供更贴心的服务，更健康、更安全、更营养和更放心的食品。
+      </view>
+    </view>
+    <view class="foot">
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">1994 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-1.jpg"></image>
+    </view>
+    <view class="time-text-one">-1994年，四川省简阳海底捞火锅正式创建</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">1999 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-2.jpg"></image>
+    </view>
+    <view class="time-text-one">-走出四川，进驻陕西省西安市</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2002 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-3.jpg"></image>
+    </view>
+    <view class="time-text-one">-进驻河南省郑州市</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2004 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-4.jpg"></image>
+    </view>
+    <view class="time-text-one">-进驻北京市</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2006 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-5.jpg"></image>
+    </view>
+    <view class="time-text-one">-进驻上海市</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2008 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-6.jpg"></image>
+    </view>
+    <view class="time-text-one">-中国烹饪协会授予我司“中华名火锅”称号</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2010 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-7.jpg"></image>
+    </view>
+    <view class="time-text-one">-推出自营火锅外送服务
+-创建海底捞学习发展中心</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2011 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-8.jpg"></image>
+    </view>
+    <view class="time-text-one">-创办通材学校
+-蜀海供应链成立</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2012 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-9.jpg"></image>
+    </view>
+    <view class="time-text-one">-海底捞首家海外门店——新加坡克拉码头店正式营业，开启全球化扩张道路</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2013 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-10.jpg"></image>
+    </view>
+    <view class="time-text-one">-美国洛杉矶Arcadia店正式营业，进军美国市场-颐海国际控股有限公司在香港注册</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2014 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-11.jpg"></image>
+    </view>
+    <view class="time-text-one">-韩国首尔店正式营业，海底捞进军韩国市场</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2015 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-12.jpg"></image>
+    </view>
+    <view class="time-text-one">-进驻中国台湾、日本市场-微海咨询公司正式成立</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2016 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-13.jpg"></image>
+    </view>
+    <view class="time-text-one">-炳文书馆正式运营
+-7月13日颐海国际在香港联合交易所有限公司正式挂牌上市</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2017 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-14.jpg"></image>
+    </view>
+    <view class="time-text-one">-进驻中国香港市场
+-海底捞服务超过1亿人次顾客</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2018 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-15.jpg"></image>
+    </view>
+    <view class="time-text-one">-海底捞超级APP上线</view>
+    </view>
+    <view class="li">
+    <view class="li-text">
+    <view class="li-image">
+    <image class="li-auto" src="../../images/red-icon.png"></image></view>
+    <view class="li-text-one">2019 年</view>
+    </view>
+    <view class="time-image">
+    <image class="time-image-auto" src="../../images/time-16.jpg"></image>
+    </view>
+    <view class="time-text-one">-海底捞继续发展全球门店网络，已覆盖亚洲、北美洲、大洋洲、欧洲等海外市场</view>
+    </view>
+    </view>
+    <view class="er">
+    <view class="er-text">扫码下载海底捞APP</view>
+    <view class="er-image">
+    <image class="er-auto-image" src="../../images/er-wei-ma.jpg"></image></view>
+    </view>
+  </view>
+
+
+

@@ -1,0 +1,47 @@
+/* pages/my-we/my-we.wxss */
+.we {
+  width: 100vw;
+  height: 100vh;
+  background:#fff;
+  text-align: center;
+}
+
+.index-menu-header{
+box-sizing: border-box;
+display: flex;
+align-items: flex-end;
+height:11vh;
+padding-bottom: 20rpx;
+}
+.menu-header-arrow{
+width:60rpx;
+height:60rpx;
+font-size: 22px;
+
+line-height: 60rpx;
+text-align: center;
+}
+.menu-header-title{
+flex:1;
+text-align: center;
+margin-right: 30rpx;
+height:60rpx;
+line-height: 60rpx;
+font-size:34rpx;
+font-weight: bold;
+}
+.text-title{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.text-one{
+  margin-top: 0px 20px;
+  padding: 25px;
+}
+.text-two{
+  margin-top: 20px;
+  padding:0px 25px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+

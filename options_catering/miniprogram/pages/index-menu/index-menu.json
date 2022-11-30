@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "order-foods":"../../components/order-foods/order-foods",
+    "van-popup": "@vant/weapp/popup/index"
+  }
+}

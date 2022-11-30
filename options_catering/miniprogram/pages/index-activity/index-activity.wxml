@@ -1,0 +1,62 @@
+<!--pages/index-activity/index-activity.wxml-->
+<view class="index-activity">
+  <view class="index-activity-header">
+    <view class="activity-header-arrow">
+      <van-icon name="arrow-left" bindtap="jumpRouterEvent" />
+    </view>
+    <view class="activity-header-title">海底捞活动</view>
+  </view>
+  <view class="index-activity-body">
+    <view class="index-activity-body-image">
+      <image class="image-hai-background" src="../../images/activity-background.jpg" alt="" />
+    </view>
+    <view class="index-activity-body-list">
+      <view class="index-activity-body-text">
+        火锅文化
+        <view class="text-icon">
+          <image class="text-image" src="../../images/text.png" alt="" />
+        </view>
+      </view>
+
+    </view>
+    <view class="video">
+      <video src="https://website.hdlcdns.com/website/video/317115a2dba64668bfb14990001dab04">
+      </video>
+    </view>
+    <view class="index-activity-body-list">
+      <view class="index-activity-body-text">
+        企业文化
+        <view class="text-icon">
+          <image class="text-image" src="../../images/text.png" alt="" />
+        </view>
+      </view>
+
+    </view>
+    <view class="corporate-culture">海底捞始终秉承“服务至上、顾客至上”的理念,以创新为核心,改变传统的标准化、单一化的服务,提倡个性化的特色服务,将用心服务作为基本理念,致力于为顾客提供“贴心、温心、舒心”的服务；在管理上,倡导双手改变命运的价值观,为员工创建公平公正的工作环境,实施人性化和亲情化的管理模式,提升员工价值。
+    </view>
+    <view class="mine-body">
+      <view class="body-container">
+        <van-tabs swipeable >
+          <van-tab wx:for="{{list}}" wx:key="index" title="{{item.title}}">
+            <view class="body-container-item">
+              <view class="container-item-img">
+                <image src="{{item.image}}"></image>
+              </view>
+
+            </view>
+            <view class="container-item-text-header">{{item.header}}
+            </view>
+            <view class="container-item-text">{{item.text}}
+              <view class="footer">
+              <image class="footer-image" src="../../images/static.png"></image>
+            </view>
+            </view>
+          
+          </van-tab>
+        </van-tabs>
+
+      </view>
+    </view>
+
+  </view>
+</view>

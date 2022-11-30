@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/my/my",
+    "pages/index-change/index-change",
+    "pages/index-menu/index-menu",
+    "pages/index-activity/index-activity",  
+    "pages/message-like/message-like",
+    "pages/message-attention/message-attention",
+    "pages/message-comments/message-comments",
+    "pages/message-notice/message-notice",
+    "pages/message-artificial/message-artificial",
+    "pages/message-mine/message-mine",
+    "pages/my-order/my-order",
+    "pages/my-we/my-we",
+    "pages/order-detail/order-detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#828282",
+    "selectedColor": "#de474b",
+    "list": [
+        {
+          "text": "首页",
+          "pagePath": "pages/index/index",
+          "iconPath": "images/home.png",
+          "selectedIconPath": "images/home_select.png"
+        },
+        {
+            "text": "消息",
+            "pagePath": "pages/message/message",
+            "iconPath": "images/xiaoxi.png",
+            "selectedIconPath": "images/xiaoxi_select.png"
+        },
+        {
+            "text": "我的",
+            "pagePath": "pages/my/my",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/my_select.png"
+        }
+    ]
+  },
+  "plugins": {
+    "chooseLocation": {
+    "version": "1.0.9",
+    "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序定位"
+    }
+}
+}

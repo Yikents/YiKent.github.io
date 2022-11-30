@@ -1,0 +1,48 @@
+<!--pages/my-order/my-order.wxml-->
+<view class="order">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left" bindtap="jumpRouterEvent" />
+    </view>
+    <view class="menu-header-title">我的订单</view>
+  </view>
+  <view class="order-dining">
+    <van-tabs swipeable>
+      <van-tab wx:for="{{list}}" wx:key="index" title="{{item.title}}">
+        <view class="tab-list-emty" hidden="{{renderData[item.type].length>0}}">
+          <view class="order-image">
+            <image class="auto-image" src="{{item.image}}"></image>
+          </view>
+          <view class="order-text">{{item.text}}
+          </view>
+        </view>
+        <view class="tab-list-container" hidden="{{renderData[item.type].length==0}}">
+          <view class="list-container-list" wx:for-item='it' wx:for-index='ind' wx:for="{{renderData[item.type]}}" wx:key="ind">
+            <view class="list-container-header">
+              <view class="header-left-content">
+                <view class="left-content-icon"><image class="auto-img" src="../../images/home_store_icon.png"></image></view>
+                <view class="left-content-store">{{it.storeName}}</view>
+              </view>
+            </view>
+            <view class="list-container-body">
+              <view class="container-body-left">
+                <view class="body-left-price">
+                  <view class="left-price-icon"><van-icon name="gold-coin-o" /></view>
+                  <view class="left-price-text">¥{{it.allPrice}}</view>
+                </view>
+                <view class="body-left-time">
+                  <view class="body-left-icon"><van-icon name="clock-o" /></view>
+                  <view class="body-left-text">{{it.time}}</view>
+                </view>
+              </view>
+              <view class="container-body-right">
+                <view class="body-right-button" bindtap="jumpOrderDedailPage" data-item="{{it}}" hidden="{{it.status!='ongoing'}}">去下单</view>
+                <view class="body-right-completed" hidden="{{it.status=='ongoing'}}">{{it.status=='completed'?'已完成':'已取消订单'}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

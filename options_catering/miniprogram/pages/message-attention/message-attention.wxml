@@ -1,0 +1,14 @@
+<!--pages/message-attention/message-attention.wxml-->
+<view class="attention">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left"  bindtap="jumpRouterEvent"/>
+    </view>
+    <view class="menu-header-title">关注</view>
+  </view>
+<view class="attention-header">
+<image src="../../images/message_follow_empty_icon.png" alt=""/>
+</view>
+<view class="attention-header-text">暂无关注</view>
+</view>
+

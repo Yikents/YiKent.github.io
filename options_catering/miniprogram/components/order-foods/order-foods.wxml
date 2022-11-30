@@ -1,0 +1,29 @@
+<view class="order-foods">
+  <view class="order-foods-container">
+    <view class="foods-container-list">
+      <view class="foods-container-item" wx:for="{{currentType}}" wx:key="index">
+        <view class="foods-container-ig">
+        <image class="auto-img" src="{{item.image}}"></image>
+        </view>
+        <view class="foods-container-context">
+          <view class="container-context-title">{{item.titleDishes}}</view>
+          <view class="container-context-center" hidden="{{item.weight=='no'}}">
+          <view class="context-center-all  {{isChange?'active-style':''}}">整份</view>
+          <view class="context-center-part">半份</view>
+          </view>
+          <view class="container-context-footer">
+            <view class="context-footer-price">¥{{item.price}}</view>
+            <view class="context-footer-button">
+              <view class="button-left-part" hidden="{{item.count==0}}">
+                <view class="button-reduce" bindtap="reduceCountEvent" data-reduce="{{item}}">-</view>
+                <view class="button-count">{{item.count}}</view>
+              </view>
+              <view class="button-right-part" bindtap="addCountEvent" data-type="{{item}}">+</view>
+
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

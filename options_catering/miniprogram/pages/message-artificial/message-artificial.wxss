@@ -1,0 +1,152 @@
+/* pages/message-artificial/message-artificial.wxss */
+.index-menu-header {
+  position: fixed;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 11vh;
+  padding-bottom: 20rpx;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.menu-header-arrow {
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 22px;
+
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.menu-header-title {
+  flex: 1;
+  text-align: center;
+  margin-right: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.time{
+  width: 100vw;
+  height: 20px;
+  margin-top: 12vh;
+}
+.artificial-time {
+  text-align: center;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.artificial-header {
+  width: 100vw;
+  margin-top: 20px;
+  display: flex;
+}
+
+.artificial-header-image {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.auto-image {
+  width: 30px;
+  height: 30px;
+}
+
+.artificial-header-text {
+  width: 250px;
+  padding: 10px;
+  margin-left: 5px;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 14px;
+}
+
+.input-bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 60px;
+  align-items: center;
+  margin: 0 auto;
+  border-top: 1px solid #bbb;
+}
+.input-text{
+  width: 80vw;
+  background-color:#fff;
+  border-radius: 999px;
+  margin: 0 auto;
+  padding: 5px 15px;
+}
+.artificial-body{
+  width: 100vw;
+}
+.body-would{
+  width: 340px;
+  height: 260px;
+  margin: 20px auto;
+}
+.would{
+  width: 340px;
+  height: 260px;
+
+}
+.stores{
+  display: flex;
+  position: relative;
+  width: 90vw;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+.stores-image{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+ 
+}
+.stores-one{
+  width: 20px;
+  height: 30px;
+}
+.stores-text{
+  margin-left: 10px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+.stores-more{
+  margin:0 25px;
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+.foot{
+  margin-bottom: 25px;
+}
+.foot-box{
+  margin: 10px 25px;
+  display: flex;
+  align-items: center;
+}
+.foot-phone{
+  width: 34px;
+  height: 34px;
+}
+.phone{
+  width: 34px;
+  height: 34px;
+
+}
+.foot-text{
+  margin-left: 10px;
+}

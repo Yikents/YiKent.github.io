@@ -1,0 +1,98 @@
+<!--pages/index-menu/index-menu.wxml-->
+<view class="index-menu">
+  <view class="index-menu-header">
+    <view class="menu-header-arrow">
+      <van-icon name="arrow-left" bindtap="jumpRouterEvent" />
+    </view>
+    <view class="menu-header-title">海底捞点餐</view>
+  </view>
+  <view class="index-menu-body">
+    <view class="menu-body-container">
+      <view class="body-container-select">
+        <view class="container-select-item {{isActive==item.type?'active-select-item':''}}" wx:for="{{DataList}}" wx:key="index" data-type="{{item}}" bindtap="ChangeMenuStatus">
+          <text>{{item.type}}</text>
+          <view class="c-s-it" wx:if="{{CurCount[item.type]}}">{{CurCount[item.type]}}</view>
+        </view>
+      </view>
+      <view class="body-container-list">
+        <view class="container-list-header">
+          <view class="list-header-ig">
+            <view class="header-ig-back">
+              <view class="back-all-bar" hidden="{{active==0}}">
+                <view class="ig-back-bar1" hidden="{{active!=2}}"></view>
+                <view class="ig-back-bar2" hidden="{{active==0}}"></view>
+              </view>
+
+              <view class="back-all-menu">
+                <view class="all-menu-first" hidden="{{active!=0}}">
+                  <image class="auto-image" src="{{showImage[0]}}"></image>
+                </view>
+                <view class="all-menu-second" hidden="{{active!=1}}">
+                  <view class="menu-second-f1">
+                    <image class="auto-image" src="{{showImage[0]}}"></image>
+                  </view>
+                  <view class="menu-second-f1">
+                    <image class="auto-image" src="{{showImage[1]}}"></image>
+                  </view>
+                </view>
+                <view class="all-menu-third" hidden="{{active!=2}}">
+                  <view class="all-menu-td" wx:for="{{showImage}}" wx:key="index">
+                    <image class="auto-image" src="{{showImage[index]}}"></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="container-list-tabs">
+          <van-tabs swipeable active="{{active}}" color="#dd464d" line-width="30" bind:change="onChange">
+            <van-tab title="{{item}}" class="tab-scroll" wx:for="{{textData}}" wx:key="index">
+              <order-foods currentType="{{singleList}}" potType="{{active}}" currentStoreData="{{storeData}}" titleName="{{isActive}}"  listenAdd="{{lisenEvent}}" listenReduce="{{ReduceEvent}}" bind:computedGoodsEvent="computedGoodsEvent"></order-foods>
+            </van-tab>
+          </van-tabs>
+        </view>
+      </view>
+    </view>
+    <view class="index-menu-footer" hidden="{{allCount==0}}">
+      <view class="menu-footer-list">
+        <view class="footer-list-left">
+          <view class="list-left-icon" bindtap="showShopCartList">
+            <van-icon name="cart-circle-o" size="23px" color="#fff" />
+            <view class="left-icon-i">{{allCount}}</view>
+          </view>
+          <view class="list-left-allprice">¥{{allPrice}}</view>
+        </view>
+        <view class="footer-list-right">
+          <view class="list-right-confirm" hidden="{{allCount!=0&&showImage.length!=0}}" bindtap="confirmPotEvent">确认锅底口味</view>
+          <view class="list-right-selected" hidden="{{allCount==0||showImage.length==0}}" catchtap="sumbitGoodEvent">已选好</view>
+        </view>
+      </view>
+    </view>
+    <view class="menu-layer" hidden="{{isCanShow}}" capture-bind:longpress="showShopCartList">
+      <view class="footer-list-cart">
+        <view class="list-cart-header">
+          <view class="list-cart-selected">已选商品</view>
+          <view class="list-cart-clear">
+            <view class="cart-clear-delete">
+              <van-icon name="delete-o" />
+            </view>
+            <view class="cart-clear-text" bindtap="clearCartEvent">清空购物车</view>
+          </view>
+        </view>
+        <view class="list-cart-body">
+        <view class="cart-body-list">
+          <view class="body-list-item" wx:for="{{currentCart}}" wx:key="index">
+            <view class="list-item-name">{{item.titleDishes}}</view>
+            <view class="list-item-price">¥{{item.price}}</view>
+            <view class="list-item-button">
+            <view class="item-button-reduce" catchtap="reduceListenEvent" data-reduce="{{item}}">-</view>
+            <view class="item-button-count">{{item.count}}</view>
+            <view class="item-button-add" catchtap="addListenEvent" data-type="{{item}}">+</view>
+            </view>
+          </view>
+        </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

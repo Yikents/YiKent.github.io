@@ -1,0 +1,78 @@
+<!--pages/index/index.wxml-->
+<view class="index">
+    <image class="index-background" src="../../images/su_background.png" alt="" />
+    <view class="index-text">
+        <view class="index-text-img">
+            <image class="index-image" src="../../images/su_comment_logo.png" alt="" />
+        </view>
+        <view class="index-text-text">
+            <view class="text-top">海底捞欢迎您！祝您用餐愉快</view>
+            <view class="text-bottom">HAIDILAOHOTPOT</view>
+        </view>
+    </view>
+    <view class="shuffling">
+        <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for-items="{{lunboData}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item.imgurl}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- <view class="map">
+        <map>
+        <cover-view slot="callout">
+            <cover-view marker-id="1"></cover-view>
+            <cover-view marker-id="2"></cover-view>
+        </cover-view>
+    </map>
+    </view> -->
+
+    <view class="index-shop">
+        <view class="index-shop-left">
+            <view class="index-stores">
+                <view class="index-stores-img">
+                    <image class="imge-house" src="../../images/home_store_icon.png" alt="" />
+                </view>
+                <view class="index-stores-name">{{storeMessage.name}}</view>
+            </view>
+            <view class="index-place">
+                <view class="index-place-icon">
+                    <image class="index-place-icon-id" src="../../images/store_icon_nav.png" alt="" />
+                </view>
+                <view class="index-place-name">{{storeMessage.address}}</view>
+            </view>
+            <view class="index-time">
+                <view class="index-time-icon">
+                    <image class="index-time-icon-id" src="../../images/store_icon_messsage.png" alt="" />
+                </view>
+                <view class="index-time-name">上午10:00-次日凌晨07:00</view>
+            </view>
+        </view>
+        <view class="index-header-right">
+            <view class="index-header-right-top">
+                <view class="index-nearly">离你最近</view>
+            </view>
+            <view class="index-header-right-bottom" bindtap="change">
+                <view class="index-change">更换门店</view>
+            </view>
+        </view>
+    </view>
+    <view class="index-order">
+        <view class="index-menu" bindtap="menu">
+            <view class="index-menu-icon">
+                <image class="index-menu-image" src="../../images/waimai.webp" alt="" />
+            </view>
+            <view class="index-menu-text-a">提前选菜</view>
+            <view class="index-menu-text-b">到店后扫码下单</view>
+        </view>
+        <view class="index-activity" bindtap="activity">
+            <view class="index-menu-icon">
+                <image class="index-menu-image" src="../../images/wenqing.webp" alt="" />
+            </view>
+            <view class="index-menu-text-a">海底捞活动</view>
+            <view class=" index-activity-text-b">等你来挑战</view>
+        </view>
+    </view>
+
+</view>
