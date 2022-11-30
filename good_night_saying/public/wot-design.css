@@ -1,0 +1,8 @@
+.wd-toast__body{
+    padding:10px 16px !important;
+    background-color:#fff !important;
+}
+.wd-toast__msg{
+    font-size:13px !important;
+    color:black;
+}
