@@ -1,0 +1,151 @@
+/* pages/user/user.wxss */
+.user-view {
+  padding: 150rpx 30rpx 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 999px;
+  background-color: #fff;
+}
+
+.user-icon image {
+  width: 104rpx;
+  height: 120rpx;
+  display: block;
+  margin: auto;
+  transform: translateX(2px);
+}
+
+.user-name {
+  margin-left: 30rpx;
+  font-size: 36rpx;
+}
+
+.user-sign {
+  display: block;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 32rpx;
+  margin-right: 0;
+}
+
+.gift {
+  margin-left: -10rpx;
+  margin-right: 10rpx;
+}
+
+.user-vip {
+  display: flex;
+  margin: 30rpx 0;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.vip-name {
+  font-size: 50rpx;
+  margin-bottom: 30rpx;
+}
+
+progress {
+  margin: 20rpx 0;
+}
+
+.vip-right {
+  margin-right: -20rpx;
+}
+
+.vip-icon {
+  width: 180rpx;
+  height: 200rpx;
+  margin-top: -30rpx;
+}
+
+.vip-icon image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.vip-look {
+  text-align: center;
+}
+
+.user-info2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-coin {
+  display: flex;
+  width: 290rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.coin-text {
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.coin-right {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: auto;
+}
+
+.coin-right image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.user-list {
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  height: 110rpx;
+  font-size: 28rpx;
+}
+
+.item-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.item-icon image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.item-arrow {
+  margin-left: auto;
+  color: #999;
+}

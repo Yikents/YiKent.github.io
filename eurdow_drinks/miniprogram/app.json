@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/orderChildren/orderChildren",
+    "pages/user/user",
+    "pages/takeorder/takeorder",
+    "pages/userDetail/userDetail",
+    "pages/storelist/storelist",
+    "pages/submitorder/submitorder",
+    "pages/indexOtherPages/indexMyAddress/indexMyAddress",
+    "pages/indexOtherPages/indexBuildAddress/indexBuildAddress",
+    "pages/indexOtherPages/indexDetailPage/indexDetailPage",
+    "pages/indexOtherPages/indexExchangePage/indexExchangePage",
+    "pages/takeordersearch/takeordersearch",
+    "pages/userCoin/userCoin",
+    "pages/userVip/userVip"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#e60011",
+    "list": [{
+        "selectedIconPath": "icons/icon_tab_home_select.png",
+        "iconPath": "icons/icon_tab_home_unselect.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "icons/icon_tab_take_order_select.png",
+        "iconPath": "icons/icon_tab_take_order_unselect.png",
+        "pagePath": "pages/storelist/storelist",
+        "text": "点餐"
+      },
+      {
+        "selectedIconPath": "icons/icon_tab_order_select.png",
+        "iconPath": "icons/icon_tab_order_unselect.png",
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "icons/icon_tab_mine_select.png",
+        "iconPath": "icons/icon_tab_mine_unselect.png",
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }
+    ]
+  },
+  "plugins": {
+    "chooseLocation":{
+      "version":"1.0.9",
+      "provider":"wx76a9a06e5b4e693e"
+      }
+  },
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序定位"
+    }
+}
+}

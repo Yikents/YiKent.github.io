@@ -1,0 +1,80 @@
+<view class="user-view" style="background: linear-gradient({{bgColor[userdata.level - 1].top}}, {{bgColor[userdata.level - 1].bottom}})">
+  <view class="user-info">
+    <navigator url="/pages/userDetail/userDetail">
+      <view class="user-icon">
+        <image src="/images/icon_level_figure_3.png"></image>
+      </view>
+    </navigator>
+
+    <view class="user-name">{{m1.toEncrypt(userdata.userName)}}</view>
+    <wxs module="m1">
+      module.exports.toEncrypt = function (str) {
+        return str.slice(0, 3) + "******" + str.slice(9, 11)
+      }
+    </wxs>
+    <button class="user-sign" bindtap="sign" disabled="{{userdata.sign}}" style="background: linear-gradient({{bgColor[userdata.level - 1].right}}, {{bgColor[userdata.level - 1].left}})">
+      <van-icon class="gift" name="point-gift" size="34rpx" />签到
+    </button>
+  </view>
+
+  <view class="user-vip" style="background: linear-gradient(to left top, {{bgColor[userdata.level - 1].left}}, {{bgColor[userdata.level - 1].right}})">
+    <view class="vip-left">
+      <view class="vip-name">{{userdata.vipName}}</view>
+      <view class="vip-sweet">甜蜜值：{{userdata.currentSweet}}/{{userdata.totalSweet}}</view>
+      <progress percent="{{m2.toDivision(userdata.currentSweet, userdata.totalSweet)}}" border-radius="999px" activeColor="#fff" backgroundColor="#ffffff66" active></progress>
+      <wxs module="m2">
+        module.exports.toDivision = function (str1, str2) {
+          return str1 / str2 * 100
+        }
+      </wxs>
+      <view class="vip-text">{{userdata.desc}}</view>
+    </view>
+    <navigator url="/pages/userVip/userVip">
+      <view class="vip-right">
+        <view class="vip-icon">
+          <image src="{{userdata.icon}}"></image>
+        </view>
+        <view class="vip-look">查看权益
+          <van-icon name="arrow" size="24rpx" />
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="user-info2">
+    <navigator url="/pages/userCoin/userCoin">
+      <view class="user-coin">
+        <view class="coin-left">
+          <view class="coin-count">{{userdata.coin}}</view>
+          <view class="coin-text">雪王币</view>
+        </view>
+        <view class="coin-right">
+          <image src="/images/icon_coin.png"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <view class="user-coin" bindtap="add">
+      <view class="coin-left">
+        <view class="coin-count">{{userdata.coupon}}</view>
+        <view class="coin-text">优惠券</view>
+      </view>
+      <view class="coin-right">
+        <image src="/images/icon_sweet.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="user-list">
+    <view class="user-item" wx:for="{{list}}" wx:key="index">
+      <view class="item-icon">
+        <image src="{{item.icon}}"></image>
+      </view>
+      <view class="item-text">{{item.title}}</view>
+      <van-icon class="item-arrow" name="arrow" />
+    </view>
+  </view>
+
+
+
+</view>
