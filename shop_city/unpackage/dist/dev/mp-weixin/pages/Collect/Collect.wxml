@@ -1,0 +1,1 @@
+<view><block wx:for="{{collectList}}" wx:for-item="item" wx:for-index="index" wx:key="id"><view data-event-opts="{{[['tap',[['gotoGoodsDetails',['$0'],[[['collectList','id',item.id,'id']]]]]]]}}" class="collect-item" bindtap="__e"><view>{{item.name}}</view></view></block></view>

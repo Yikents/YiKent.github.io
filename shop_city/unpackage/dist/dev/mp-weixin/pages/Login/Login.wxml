@@ -1,0 +1,1 @@
+<view class="login-box"><view class="login"><view class="img"><image src="{{$root.m0}}" class="_img"></image></view><view data-event-opts="{{[['tap',[['goIndex']]]]}}" class="text" bindtap="__e">微信一键登录</view><view class="tis">登录后尽享更多权益</view></view></view>

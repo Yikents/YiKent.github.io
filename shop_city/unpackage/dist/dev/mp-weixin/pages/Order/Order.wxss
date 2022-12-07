@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.order-list {
+  padding: 30rpx;
+}
+.order-list .order-item {
+  padding: 15rpx;
+  display: flex;
+  margin-top: 20rpx;
+  border: 1px solid #eee;
+  border-radius: 15rpx;
+  height: 150rpx;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+.order-list .order-item .img {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.order-list .order-item .img ._img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.order-list .order-item .desc {
+  width: 70%;
+  font-size: 12px;
+  color: #9f9f9f;
+  margin: 0 20rpx;
+}
+.order-list .order-item .num-price {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.order-list .order-item .num-price .price {
+  color: #c72f1e;
+}
+.order-list .order-item .num-price .num {
+  margin-top: 30rpx;
+  color: #000;
+}
+

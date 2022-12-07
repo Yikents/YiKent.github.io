@@ -1,0 +1,132 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "提莫商城"
+			}
+		}, {
+			"path": "pages/Classify/Classify",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ShoppingCart/ShoppingCart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/User/User",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/SearchDetails/SearchDetails",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/GoodsDetails/GoodsDetails",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/SearchList/SearchList",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": false
+			}
+		}
+
+		, {
+			"path": "pages/Order/Order",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Collect/Collect",
+			"style": {
+				"navigationBarTitleText": "收藏",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "广现商城",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/@vant/weapp/button/index",
+			"van-tab": "/wxcomponents/@vant/weapp/tab/index",
+			"van-tabs": "/wxcomponents/@vant/weapp/tabs/index",
+			"van-search": "/wxcomponents/@vant/weapp/search/index",
+			"van-goods-action": "/wxcomponents/@vant/weapp/goods-action/index",
+			"van-goods-action-icon": "/wxcomponents/@vant/weapp/goods-action-icon/index",
+			"van-goods-action-button": "/wxcomponents/@vant/weapp/goods-action-button/index",
+			"van-toast": "/wxcomponents/@vant/weapp/toast/index",
+			"van-popup": "/wxcomponents/@vant/weapp/popup/index",
+			"van-icon": "/wxcomponents/@vant/weapp/icon/index",
+			"van-submit-bar": "/wxcomponents/@vant/weapp/submit-bar/index",
+			"van-empty": "/wxcomponents/@vant/weapp/empty/index",
+			"van-card": "/wxcomponents/@vant/weapp/card/index",
+			"van-swipe-cell": "/wxcomponents/@vant/weapp/swipe-cell/index",
+			"van-stepper": "/wxcomponents/@vant/weapp/stepper/index"
+		}
+
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#c00",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/imgs/homepage_1.png",
+				"selectedIconPath": "static/imgs/homepage_2.png"
+			},
+			{
+				"text": "分类",
+				"pagePath": "pages/Classify/Classify",
+				"iconPath": "static/imgs/classify_1.png",
+				"selectedIconPath": "static/imgs/classify_2.png"
+			},
+			{
+				"text": "购物车",
+				"pagePath": "pages/ShoppingCart/ShoppingCart",
+				"iconPath": "static/imgs/shoppingcart_1.png",
+				"selectedIconPath": "static/imgs/shoppingcart_2.png"
+			},
+			{
+				"text": "个人中心",
+				"pagePath": "pages/User/User",
+				"iconPath": "static/imgs/user_1.png",
+				"selectedIconPath": "static/imgs/user_2.png"
+			}
+		]
+	}
+
+}
